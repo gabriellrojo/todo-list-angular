@@ -1,0 +1,10 @@
+@import "../../../../dist/variables.scss";
+
+.header{
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

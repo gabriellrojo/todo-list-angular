@@ -1,0 +1,18 @@
+@import "../../../../dist/variables.scss";
+
+:host{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-danger
+{
+  background-color: $button-background-color;
+  border: none;
+  color: $primary-text-color;
+  border-radius: 50px;
+  width: 200px;
+  height: 41px;
+  margin-top: 1rem;
+  font-size: 15px;
+}

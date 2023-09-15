@@ -1,0 +1,14 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="list-container">
+    <div *ngFor="let item of listTask, let i = index">
+      <input (click)="handleCheck(i)" type="checkbox" [(ngModel)]=item.check>
+      <p [ngClass]="{'checked-style': item.check}">{{item.task}}</p>
+      <img (click)="deleteTask(i)" class="thrash" src="../../../../assets/icons/icon-trash.svg" alt="imagem de uma lixeira">
+    </div>
+  </div>
+  <div class="add-task-container">
+    <input class="add-task" type="text" placeholder="Digite aqui a sua task..." (keyup.enter)="addTask()" [(ngModel)]=valor>
+  </div>
+  <app-button (click)="deleteAll()"></app-button>
+</div>

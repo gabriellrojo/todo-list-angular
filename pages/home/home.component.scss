@@ -1,0 +1,58 @@
+@import "../../../../dist/variables.scss";
+
+.container{
+  width: 40vw;
+  height: 50vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.list-container{
+  min-height: 250px;
+  background-color: $secundary-background-color;
+  margin-top: 2rem;
+}
+
+.list-container{
+  & div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  & div:last-child{
+    padding-bottom: 2.5rem;
+  }
+}
+
+.add-task-container{
+  display: flex;
+  justify-content: center;
+}
+
+.add-task{
+  width: 80%;
+  outline: none;
+  border: none;
+  background-color: $primary-background-color;
+  height: 3rem;
+  margin-top: -1.5rem;
+  padding: 0 2rem;
+  color: $primary-text-color
+}
+
+.add-task{
+  &::placeholder{
+    color: $primary-text-color;
+    text-align: center
+  }
+}
+
+.thrash{
+  cursor: pointer
+}
+
+.checked-style{
+  text-decoration: line-through;
+}
+
+
